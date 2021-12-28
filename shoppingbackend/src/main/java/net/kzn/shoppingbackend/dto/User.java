@@ -12,7 +12,9 @@ import javax.persistence.Id;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 import javax.persistence.Transient;
+import javax.validation.constraints.Pattern;
 
+import org.hibernate.validator.constraints.Email;
 import org.hibernate.validator.constraints.NotBlank;
 
 @Entity
@@ -27,21 +29,33 @@ public class User implements Serializable{
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
+	
+	
 	@NotBlank(message = "Please enter first name!")
+	@Pattern(regexp = "^[A-Za-z]+$", message="Please enter a valid Name")
 	@Column(name = "first_name")
 	private String firstName;
+	
+	@Pattern(regexp = "^[A-Za-z]+$", message="Please enter a valid Name")
 	@NotBlank(message = "Please enter last name!")
 	@Column(name = "last_name")
 	private String lastName;
+	
 	@NotBlank(message = "Please enter email address!")	
+	@Email
 	private String email;
+	
 	@NotBlank(message = "Please enter contact number!")
+	@Pattern(regexp = "^[0-9]{10}", message="Please enter a valid Phone number")
 	@Column(name = "contact_number")
 	private String contactNumber;
+	
 	private String role;
+	
 	@NotBlank(message = "Please enter password!")
 	private String password;
 	private boolean enabled = true;
+	
 	@Transient
 	private String confirmPassword;
 

@@ -58,7 +58,7 @@
 	        <div class="container">
 	            <!-- Brand and toggle get grouped for better mobile display -->
 	            <div class="navbar-header">
-	                <a class="navbar-brand" href="${flowExecutionUrl}&_eventId=home">TechHub</a>
+	                <a class="navbar-brand" href="${flowExecutionUrl}&_eventId=home"><img class="slide-image" src="${images}/logo.png"alt="" style="width:150px;height:40px; "></a>
 	            </div>
 			</div>
 		</nav>

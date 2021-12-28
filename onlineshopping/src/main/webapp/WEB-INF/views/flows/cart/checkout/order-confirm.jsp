@@ -58,7 +58,7 @@
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
            <div class="navbar-header">
-               <a class="navbar-brand" href="${contextRoot}/home">Online Shopping</a>
+               <a class="navbar-brand" href="${contextRoot}/home"><img class="slide-image" src="${images}/logo.png"alt=""  style="width:150px;height:40px;"></a>
            </div>
 		</div>
 	</nav>
@@ -151,6 +151,11 @@
 		    		</div>
 		    	</div>
 		    </div>
+		    <div class="text-center">
+		    	<input type="button" class="btn btn-primary"  value="Print" onClick="window.print()">
+		    	<br>
+		    </div>
+		    
 		    <div class="text-center">
 		    	<a href="${contextRoot}/show/all/products" class="btn btn-lg btn-warning">Continue Shopping</a>
 		    </div>

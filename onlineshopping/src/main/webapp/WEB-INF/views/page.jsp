@@ -22,13 +22,15 @@
 <meta name="_csrf_header" content="${_csrf.headerName}">
 
 <title>TechHub - ${title}</title>
-
+	
 <script>
 	window.menu = '${title}';
 	
 	window.contextRoot = '${contextRoot}'
 	
 </script>
+
+<link href="${images}/logo.png" rel="icon"/>
 
 <!-- Bootstrap Core CSS -->
 <link href="${css}/bootstrap.min.css" rel="stylesheet">

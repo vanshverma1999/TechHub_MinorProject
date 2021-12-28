@@ -12,13 +12,15 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="${contextRoot}/home">TechHub</a>
+                <a class="navbar-brand" href="${contextRoot}/home">
+                	<img class="slide-image" src="${images}/logo.png"alt="" style="width:150px;height:40px; ">
+                </a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li id="about">
-                        <a href="${contextRoot}/about">About</a>
+                        <a href="${contextRoot}/about">About </a>
                     </li>
 
                     <li id="contact">
